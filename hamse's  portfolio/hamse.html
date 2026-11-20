@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamse Ismail Nur – ICT Diploma Holder &amp; Software Developer</title>
+<meta name="description" content="Portfolio of Hamse Ismail Nur from Hargeisa, Somalia: ICT diploma holder, software developer and cybersecurity student applying for undergraduate scholarships.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F9FB; --surface:#FFFFFF; --ink:#12263F; --text:#2A3A4D; --muted:#5C6B7D;
+  --blue:#1F5F99; --line:#D9E2EB; --accent:#F2A93B; --block:#1F5F99;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0E1A2A; --surface:#14253B; --ink:#EEF3F8; --text:#C9D5E2; --muted:#93A4B8; --blue:#7DB6EA; --line:#26405C; --block:#1F5F99; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);margin:0;line-height:1.15}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:22px;align-items:center;justify-content:space-between;height:56px}
+nav strong{font-family:Sora,sans-serif;color:var(--ink);font-size:1rem}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav a{text-decoration:none;color:var(--text);font-weight:600;font-size:.95rem;white-space:nowrap}
+nav a:hover{color:var(--blue)}
+
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4.1rem);font-weight:800;letter-spacing:-.02em}
+.role{font-family:Sora,sans-serif;font-weight:500;color:var(--blue);font-size:1.2rem;margin:16px 0 20px}
+.hero p{max-width:34em;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--blue)}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.primary:hover{background:var(--ink)}
+.btn.ghost{color:var(--blue)}
+.btn.ghost:hover{background:var(--surface)}
+@media (prefers-color-scheme: dark){ .btn.primary{color:#0E1A2A} .btn.primary:hover{background:#fff} }
+.photo{position:relative;justify-self:center;width:min(100%,360px)}
+.photo::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--block);border-radius:10px}
+.photo img{position:relative;display:block;width:100%;height:auto;border-radius:10px;border:4px solid var(--surface);background:#fff}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:1.8rem;margin-bottom:28px}
+.cols{display:grid;grid-template-columns:200px 1fr;gap:40px}
+.cols>h2{margin:0}
+.item{padding-left:22px;border-left:3px solid var(--line);margin-bottom:28px;position:relative}
+.item::before{content:"";position:absolute;left:-8px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--blue)}
+.item h3{font-size:1.15rem}
+.when{color:var(--muted);font-size:.95rem;margin:2px 0 8px}
+.item p{margin:0 0 8px;max-width:42em}
+.cert{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin-bottom:16px}
+.cert h3{font-size:1.1rem;margin-bottom:4px}
+.cert .when{margin-bottom:6px}
+.cert p{margin:0;max-width:42em}
+dl{margin:0}
+dt{font-family:Sora,sans-serif;font-weight:700;color:var(--ink);margin-top:18px}
+dt:first-child{margin-top:0}
+dd{margin:4px 0 0}
+.contact a{font-weight:600}
+.docs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.doc{display:block;text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.doc:hover{border-color:var(--blue)}
+.doc img{display:block;width:100%;height:170px;object-fit:cover;object-position:top;background:#fff;border-bottom:1px solid var(--line)}
+.doc span{display:block;padding:12px 14px;font-size:.95rem;line-height:1.4}
+.doc b{display:block;color:var(--ink);font-family:Sora,sans-serif;font-size:.95rem;margin-bottom:2px}
+.note{color:var(--muted);margin:0 0 24px;max-width:42em}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+
+@media (max-width:760px){
+  .hero{padding:36px 0 48px}
+  .hero .wrap{grid-template-columns:1fr;gap:44px}
+  .photo{order:-1;width:min(78%,300px);margin-right:18px}
+  .cols{grid-template-columns:1fr;gap:20px}
+  nav strong{display:none}
+  nav .wrap{justify-content:flex-start}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <strong>Hamse Ismail Nur</strong>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#documents">Documents</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Hamse Ismail Nur</h1>
+      <div class="role">ICT Diploma Holder and Software Developer in Hargeisa, Somalia</div>
+      <p>I graduated secondary school with a 94% average (Grade A), earned a Cisco cybersecurity certificate with 93%, and build web tools for student recruitment. I am applying for a fully funded undergraduate scholarship in Computer Engineering or Cybersecurity.</p>
+      <div class="btns">
+        <a class="btn primary" href="mailto:Hamseismail73@gmail.com">Email me</a>
+        <a class="btn ghost" href="#experience">See my work</a>
+      </div>
+    </div>
+    <div class="photo">
+      <img src="victoria.jpeg" width="900" height="1065" alt="Portrait of Hamse Ismail Nur">
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap cols">
+    <h2>About</h2>
+    <div>
+      <p>I am a high-achieving secondary school graduate and ICT diploma holder. I combine practical full-stack software development, cybersecurity fundamentals and digital marketing to build technology that helps institutions and communities grow.</p>
+      <p>My goal is to study Computer Engineering or Cybersecurity at university and bring those skills back to Somaliland. My secondary and diploma studies were taught in English, and I have an official Medium of Instruction (MOI) letter to confirm it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap cols">
+    <h2>Education</h2>
+    <div>
+      <div class="item">
+        <h3>Secondary School Leaving Certificate</h3>
+        <div class="when">Noradin Boys’ Secondary School, Hargeisa · 2025/2026 academic year</div>
+        <p><strong>Overall grade: A (94% average).</strong> Taught in English (MOI verified).</p>
+        <p>Subjects: Mathematics, Physics, Chemistry, Biology, English, Somali, History, Geography and Islamic Studies.</p>
+      </div>
+      <div class="item">
+        <h3>Diploma in Information and Communication Technology</h3>
+        <div class="when">Tanaad Computer Science College, Hargeisa · Graduated January 2024</div>
+        <p><strong>Cumulative GPA: 3.68 (4.0 scale).</strong> Taught in English.</p>
+        <p>Coursework: Fundamentals of Computer Security, Network and Data Communication, Web Design, Database Management, C# Programming, and System Analysis and Design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap cols">
+    <h2>Certificates</h2>
+    <div>
+      <div class="cert">
+        <h3>Introduction to Cybersecurity</h3>
+        <div class="when">Cisco Networking Academy · September 2026</div>
+        <p>Final exam score: 93%. Covers network defense, threat analysis and data privacy.</p>
+      </div>
+      <div class="cert">
+        <h3>Evaluate AI Applications</h3>
+        <div class="when">OpenAI Academy · September 2026</div>
+        <p>Evaluating generative AI outputs, prompt engineering workflows and responsible AI use.</p>
+      </div>
+      <div class="cert">
+        <h3>English Medium of Instruction (MOI) Letter</h3>
+        <div class="when">Official institutional verification</div>
+        <p>Noradin Boys’ Secondary School confirms that all subjects are taught and assessed in English. <a href="docs/noradin-moi-letter.jpg" target="_blank" rel="noopener">View the letter</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="documents">
+  <div class="wrap">
+    <h2>Documents</h2>
+    <p class="note">Scans of my certificates and transcripts. Select any card to open the full image.</p>
+    <div class="docs">
+      <a class="doc" href="docs/quran-certificate.jpg" target="_blank" rel="noopener"><img src="quran.png" loading="lazy" alt="Quran memorization certificate"><span><b>Quran Memorization (15 parts)</b>Final exam 91% · 20 Apr 2023</span></a>
+      <a class="doc" href="docs/secondary-certificate.jpg" target="_blank" rel="noopener"><img src="secondry certificaye.png" loading="lazy" alt="Secondary Education Certificate, Federal Republic of Somalia"><span><b>Secondary Education Certificate</b>Ministry of Education, Federal Republic of Somalia · 1 Oct 2026</span></a>
+      <a class="doc" href="docs/noradin-moi-letter.jpg" target="_blank" rel="noopener"><img src="moi.png" loading="lazy" alt="Confirmation letter from Noradin Boys’ Secondary School"><span><b>Confirmation and MOI letter</b>Noradin Boys’ Secondary School · 23 Sep 2026</span></a>
+      <a class="doc" href="docs/ict-diploma.jpg" target="_blank" rel="noopener"><img src="ict.png" loading="lazy" alt="Diploma in ICT from Tanaad Computer Science College"><span><b>Diploma in ICT</b>Tanaad Computer Science College · 1 Jan 2024</span></a>
+      <a class="doc" href="docs/diploma-transcript.jpg" target="_blank" rel="noopener"><img src="ict transcript.png" loading="lazy" alt="Academic transcript from Tanaad Computer Science College"><span><b>Diploma transcript</b>Tanaad Computer Science College · GPA 3.68</span></a>
+      <a class="doc" href="docs/cisco-cybersecurity.jpg" target="_blank" rel="noopener"><img src="cisco.png" loading="lazy" alt="Cisco Introduction to Cybersecurity certificate"><span><b>Introduction to Cybersecurity</b>Cisco Networking Academy · 29 Sep 2026</span></a>
+      <a class="doc" href="docs/ogf-sahan-training.jpg" target="_blank" rel="noopener"><img src="ogf.png" loading="lazy" alt="OGF University pre-university training certificate"><span><b>Pre-University Training</b>OGF University and SAHAN Network · 25 to 30 Jul 2026</span></a>
+      <a class="doc" href="docs/time-management.jpg" target="_blank" rel="noopener"><img src="time.png" loading="lazy" alt="Tayo Development Center time management certificate"><span><b>Time Management</b>Tayo Development Center · 3 Jan 2025</span></a>
+      <a class="doc" href="docs/nursing-skills.jpg" target="_blank" rel="noopener"><img src="central.png" loading="lazy" alt="Central College fundamental nursing skills certificate"><span><b>Fundamental Nursing Skills</b>Central College · Passed</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap cols">
+    <h2>Experience</h2>
+    <div>
+      <div class="item">
+        <h3>Software Developer, Student Recruitment Systems</h3>
+        <div class="when">Hargeisa · November 2024 to present</div>
+        <p>Designed and maintain web-based lead-tracking dashboards that organize student outreach and admissions calls.</p>
+        <p>Built structured data pipelines and deduplicated spreadsheets to remove duplicate records and make recruitment tracking more accurate.</p>
+      </div>
+      <div class="item">
+        <h3>Digital Marketer and Content Producer</h3>
+        <div class="when">Frantz Fanon University and Nasiye Pharmacy, Hargeisa · October 2025 to present</div>
+        <p>Produce promotional scripts, print brochures and AI-assisted video advertisements to grow student enrollment and brand visibility.</p>
+        <p>Work with academic and commercial teams so each campaign supports enrollment and customer targets.</p>
+      </div>
+      <div class="item">
+        <h3>AI and Cross-Platform Prototyping</h3>
+        <div class="when">Personal projects</div>
+        <p>Built working prototypes of web recruitment dashboards and AI-assisted user-testing tools with modern web frameworks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap cols">
+    <h2>Skills</h2>
+    <dl>
+      <dt>Programming and web development</dt>
+      <dd>HTML, CSS, JavaScript, React, Python, SQL</dd>
+      <dt>Cybersecurity and data systems</dt>
+      <dd>Network security fundamentals, threat assessment, data deduplication, system troubleshooting</dd>
+      <dt>AI and digital production</dt>
+      <dd>Generative AI workflows (prompt engineering, video and visual creation), Microsoft Excel, Google Sheets</dd>
+      <dt>Languages</dt>
+      <dd>Somali (native), English (fluent, academic medium of instruction), Arabic</dd>
+      <dt>Outside work</dt>
+      <dd>Active football player in Hargeisa, committed to teamwork and discipline.</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap cols">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>I am open to scholarship opportunities, internships and collaboration.</p>
+      <p>Email: <a href="mailto:Hamseismail73@gmail.com">Hamseismail73@gmail.com</a><br>Location: Hargeisa, Somalia</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Hamse Ismail Nur</div>
+</footer>
+
+</body>
+</html>
